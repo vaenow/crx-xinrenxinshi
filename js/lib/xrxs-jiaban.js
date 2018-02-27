@@ -18,7 +18,7 @@ function start(day) {
   if (!day) {
     day = 1;
   } else if (day > getTotalDays()) {
-    loggerSuccess('加班申请完成！');
+    loggerSuccess('申请完成！');
     return
   }
 
@@ -158,7 +158,7 @@ function autoInjectBtn() {
   clearInterval(autoInjectBtnNum);
 
   jbItem.on('click', () => {
-    loggerInfo('开始批量申请加班中...');
+    loggerInfo('开始批量申请中...');
     start()
   })
 
