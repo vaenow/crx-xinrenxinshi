@@ -8,6 +8,7 @@
     height: 0.88rem;
     line-height: 0.88rem;
     border-radius: 0.2rem;
+    padding: 6px 6px 6px 9px;
 }
 
 .icon-colorfull > .content:hover {
@@ -17,5 +18,9 @@
 
 .hide {
     display: none;
+}
+
+#jiaBanItem .p1 {
+    font-weight: bold;
 }
 

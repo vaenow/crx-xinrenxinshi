@@ -1,8 +1,8 @@
 {
   "name": "XinRenXinShi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
-  "description": "薪人薪事App ✅ 批量申请加班",
+  "description": "薪人薪事App ✅ 批量申请",
   "icons": {
     "128": "img/xin-128.png"
   },
