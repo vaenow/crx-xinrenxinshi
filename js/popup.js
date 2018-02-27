@@ -1,33 +1,38 @@
 /**
-* @date 2017-10-29
-* @author LuoWen
-**/
-  // Once the DOM is ready...
-window.addEventListener('DOMContentLoaded', function() {
-  getWebStore()
+ * @date 2017-10-29
+ * @author LuoWen
+ **/
+// Once the DOM is ready...
+window.addEventListener('DOMContentLoaded', function () {
+  // getWebStore()
+  $('#redirect').click(() => {
+    // alert('clicked');
+    chrome.tabs.create({active: true, url: "https://e.xinrenxinshi.com/"});
+  })
 });
 
 // ======================= // Utils
 
-function noFn() {}
+function noFn() {
+}
 
 function messager({
-    from = "",
-    subject = {},
-    afterSend = noFn,
-    beforeSend = noFn
-}) {
+                    from = "",
+                    subject = {},
+                    afterSend = noFn,
+                    beforeSend = noFn
+                  }) {
   chrome.tabs.query({
     active: true,
     currentWindow: true
-  }, function(tabs) {
+  }, function (tabs) {
     beforeSend(tabs)
     chrome.tabs.sendMessage(
       tabs[0].id, {
         from,
         subject: JSON.stringify(subject)
       },
-      function(resp = "{}") {
+      function (resp = "{}") {
         afterSend(JSON.parse(resp))
       }
     );

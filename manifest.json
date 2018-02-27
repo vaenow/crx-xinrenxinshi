@@ -1,10 +1,10 @@
 {
-  "name": "CRX Starter",
+  "name": "XinRenXinShi",
   "version": "1.0.1",
   "manifest_version": 2,
-  "description": "This is a starter kit for Chrome Extension",
+  "description": "薪人薪事App ✅ 批量申请加班",
   "icons": {
-    "128": "img/snow-128.png"
+    "128": "img/xin-128.png"
   },
   "background": {
     "persistent": false,
@@ -12,21 +12,27 @@
   },
   "browser_action": {
     "default_title": "",
-    "default_icon": "img/snow.png",
+    "default_icon": "img/xin-20.png",
     "default_popup": "index.html"
   },
   "permissions": [
     "tabs",
     "background",
     "http://*/*",
-    "https://*/*" 
+    "https://*/*"
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.coursera.org/*", "<all_urls>"],
-      "css": ["css/contentstyle.css"],
+      "matches": ["<all_urls>"],
+      "css": [
+        "css/lobibox.min.css",
+        "css/contentstyle.css"
+      ],
       "js": [
-        "js/lib/jquery.slim.min.js",
+        "js/lib/jquery-3.3.1.min.js",
+        "js/lib/lobibox-dist/js/lobibox.js",
+        "js/lib/moment.js",
+        "js/lib/xrxs-jiaban.js",
         "js/contentscript.min.js"
       ],
       "run_at": "document_end"

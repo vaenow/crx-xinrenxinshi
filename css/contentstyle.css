@@ -1,1 +1,21 @@
 /* content styles */
+
+.icon-colorfull > .content {
+    transition: background-color 0.5s ease;
+    background-color: #FFEBCD;
+    text-align: center;
+    font-size: 0.4rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-radius: 0.2rem;
+}
+
+.icon-colorfull > .content:hover {
+    background-color: cornflowerblue;
+    color: cornsilk;
+}
+
+.hide {
+    display: none;
+}
+

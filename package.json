@@ -19,7 +19,9 @@
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "lobibox": "^1.0.0",
+    "moment": "^2.20.1"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
