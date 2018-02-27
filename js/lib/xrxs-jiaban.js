@@ -39,7 +39,7 @@ function send(day) {
       end_date,
       flow_type: 9,
       overtime_hour: 4,
-      reason: '加班',
+      reason: '项目需要',
       overtime_compensation_rule: 1,
       custom_field: []
     },
